@@ -32,19 +32,19 @@ public class ProductModel {
 	public ProductModel() {}
 	
 	public ProductModel(int id,
-			@NotNull(message = "Duration is a required field") @Size(min = 1, max = 32, message = "Duration must be between 1 and 32 characters") String duration,
-			@NotNull(message = "Price is a required field") @Size(min = 1, max = 32, message = "Price must be between 1 and 32 characters") String price,
-			@NotNull(message = "StartDate is a required field") @Size(min = 1, max = 32, message = "startDate must be between 1 and 32 characters") String startDate,
+			    @NotNull(message = "TripName is a required field") @Size(min = 1, max = 32, message = "trip name must be between 1 and 32 characters") String tripName,
 			@NotNull(message = "TripDes is a required field") @Size(min = 1, max = 32, message = "tripdes must be between 1 and 32 characters") String tripDes,
-			@NotNull(message = "TripName is a required field") @Size(min = 1, max = 32, message = "trip name must be between 1 and 32 characters") String tripName,
+			    		@NotNull(message = "StartDate is a required field") @Size(min = 1, max = 32, message = "startDate must be between 1 and 32 characters") String startDate,
+			    @NotNull(message = "Duration is a required field") @Size(min = 1, max = 32, message = "Duration must be between 1 and 32 characters") String duration,
+			@NotNull(message = "Price is a required field") @Size(min = 1, max = 32, message = "Price must be between 1 and 32 characters") String price,
 			@NotNull(message = "TripType is a required field") @Size(min = 1, max = 32, message = "trip type must be between 1 and 32 characters") String tripType) {
 		
 		this.id = id;
+		this.tripName = tripName;
+		this.tripDes = tripDes;
+		this.startDate = startDate;
 		this.duration = duration;
 		this.price = price;
-		this.startDate = startDate;
-		this.tripDes = tripDes;
-		this.tripName = tripName;
 		this.tripType = tripType;
 		
 	}
